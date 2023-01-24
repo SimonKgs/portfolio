@@ -1,4 +1,4 @@
-//  TODO: OBTENER LAS IMAGENES DE GIPHY
+//  TODO: OBTENER LAS IMAGENES DE GIPHY CON 
 
 const card1 = {
     id: 'IdmfEtnMWPzOg',

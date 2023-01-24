@@ -5,7 +5,7 @@ import { cards } from "../components/Cards/cards";
 const getGifs = () => {
 
     const tarjetas = cards.map( async(card) => {
-        const url = `https://api.giphy.com/v1/gifs/${card.id}?api_key=0mlTmpWLk10Tft0XyGR2bjkeOZ0EFpUH`;
+        const url = `https://api.giphy.com/v1/gifs/${card.id}?api_key=${process.env.REACT_APP_API}`;
         const { data } = await (await fetch( url )).json();
         card.src = data.images.downsized.url;
 

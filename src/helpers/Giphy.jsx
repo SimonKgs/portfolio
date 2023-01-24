@@ -2,7 +2,7 @@
 export const Giphy = () => {
 
     const getGif = async() => {
-        const urlFetch = `https://api.giphy.com/v1/gifs/vjjCsx3izfSyQ?api_key=0mlTmpWLk10Tft0XyGR2bjkeOZ0EFpUH`;
+        const urlFetch = `https://api.giphy.com/v1/gifs/vjjCsx3izfSyQ?api_key=${process.env.REACT_APP_API}`;
         const resp = await fetch( urlFetch );
         const { data } = await resp.json();
 
