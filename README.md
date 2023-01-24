@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este será mi portfolio, en el que aún estoy trabajando, por el momento es solo una versión anticipada.
+
+## Tecnologías
+
+JavaScript
+React
+SASS
 
 ## Available Scripts
 
