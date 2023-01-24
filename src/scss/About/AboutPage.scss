@@ -1,0 +1,16 @@
+.About {
+    background-color: black;
+    color: $claridad;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+
+
+    &__Content {
+        width: 50vw;
+        overflow-y: scroll;
+
+    }
+
+}

@@ -1,0 +1,22 @@
+// General
+@import './Colors.scss';
+
+//  Componentes globales
+@import "./Header.scss";
+@import "./Footer.scss";
+
+
+
+//  Home
+@import "./HomePage/HomePage.scss";
+@import "./HomePage/Card.scss";
+
+
+//  CV
+@import "./CV/CVPage.scss";
+
+//  About
+@import "./About/AboutPage.scss";
+
+//  Examples
+@import "./ExamplesPage/Examples.scss";

@@ -1,0 +1,63 @@
+.Card {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: $informal;
+    color: white;
+    border-radius: 2rem;
+    height: 55vh;
+    text-align: center;
+    font-size: x-large;
+
+
+    &__Content {
+        padding: 2rem;
+    }
+
+    &__Titulo{
+        margin-top: -1rem;
+    }
+    
+    &__Body {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__Image, &__Description {
+        width: 100%;
+        border-radius: 2rem;
+
+    }
+
+    &__Image {
+        height: 15vh;
+        border: solid 0.1rem white;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+
+        @media (min-width: 768px) {
+            height: 30vh;
+            width: 30vw;
+            margin-top: 2rem;
+        }
+    }
+
+
+    &__Description {
+        height: 24vh;
+        background-color: white;
+        padding: 1rem;
+        color: black;
+        overflow-y: scroll;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            height: 30vh !important;
+            width: 40vw;
+            margin-top: 2rem;
+        }
+    }
+}

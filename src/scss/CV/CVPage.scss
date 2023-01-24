@@ -1,0 +1,50 @@
+.CV {
+  display: flex;
+  margin-left: 4rem !important;
+  margin-right: 4rem !important;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  &__descripcion,
+  &__titulos,
+  &__experiencia,
+  &__skills {
+    height: calc(100vh - 14rem);
+    width: calc((100vw - 8rem) / 3);
+    padding: 1rem;
+    font-family: "Times New Roman", Times, serif;
+    overflow-y: scroll;
+
+    @media (max-width: 768px) {
+      height: auto;
+      width: 100%;
+      overflow-y: visible;
+      font-size: large;
+    }
+    
+    &__titulo {
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    &__cabecera {
+      font-weight: bold;
+
+    }
+  }
+
+  //  background 
+  &__titulos, &__skills{
+    background-color: $cv2;
+  }
+
+  &__descripcion, &__experiencia {
+    background-color: $cv1;
+  }
+
+}

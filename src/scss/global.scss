@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+.Page {
+    height: calc(100vh - 14rem);
+    min-width: 60vw;
+}
+
+
+.invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+

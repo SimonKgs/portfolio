@@ -1,0 +1,43 @@
+.Header {
+    background-color: $principal;
+    height: 6rem;
+}
+
+.Topbar {
+    height: 60%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__left {
+        margin-left: 1rem;
+    }
+
+    &__right {
+        margin-right: 1rem;
+    }
+}
+
+.Menu {
+    background-color: $secundario;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__component {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 33.3%;
+        color: white;
+        text-align: center;
+
+        &:hover {
+            font-size: x-large;
+            background-color: $claridad;
+            color: black;
+        }
+
+    }
+}
