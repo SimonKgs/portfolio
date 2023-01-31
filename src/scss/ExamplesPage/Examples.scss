@@ -1,7 +1,48 @@
 .Examples {
-    background-color: $claridad !important;
+  background-color: $claridad !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  overflow-y: scroll;
+
+
+  &__Container {
+    width: 60vw;
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
+    padding: 1rem;
+  }
+
+  &__Header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+    &__Title{
+        padding-top: 1rem;
+    }
+  }
+
+  &__Card {
+    background-color: aqua;
+    padding: 1rem;
+    display: flex;
+    color: black;
+    border-bottom: 1px solid black;
+
+    &__Name {
+      width: 25vw;
+      align-self: center;
+      text-align: center;
+      
+    }
+
+    &__Description{
+      align-self: center;
+      width: 35vw;
+    }
+  }
 }
