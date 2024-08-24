@@ -1,0 +1,75 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.home h1, .home h2 {
+    align-self: center;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.home-container {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-profile, .home-info {
+    display: flex;
+    border-radius: 1rem;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(24, 24, 24, 0.3);
+    color: #FFF;
+    padding: 1rem;
+}
+
+.home-profile {
+    flex-direction: column;
+    flex-grow: 0; 
+    flex-shrink: 1;
+    align-self: flex-start;
+
+}
+
+.home-info {
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    contain: layout style; /* Restricts the scope of layout and style recalculations */
+    gap: 2rem;
+}
+
+
+@media (min-width: 768px) {
+    .home-container {
+        gap: 2rem;
+        max-width: 100vw;
+        box-sizing: border-box; 
+    }
+
+    .home-profile, .home-info {
+        padding: 2rem;
+    }
+
+}
+
+@media (min-width: 1250px) {
+    .home-container {
+        flex-direction: row;
+    }
+
+    .home-profile {
+        max-width: 25rem;
+    }
+}
+
+@media (min-width: 1800px) {
+    .home-info {
+        flex-direction: row;
+    }
+}
+

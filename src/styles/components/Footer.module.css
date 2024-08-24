@@ -1,9 +1,12 @@
 .footer-container {
     padding: 10px;
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-text {

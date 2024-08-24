@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
 
 import { navbarStyles } from '../styles'; 
+import { icon } from '../assets';
 
 
 export const Navbar: React.FC = () => {
@@ -19,9 +19,11 @@ export const Navbar: React.FC = () => {
           ☰
           </button>
           <ul className={`${navbarStyles.menu} ${isMenuOpen ? navbarStyles.open : ''}`}>
-              <li onClick={handleToggleMenu}><Link to="/">Home</Link></li>
-              <li onClick={handleToggleMenu}><Link to="/about">About</Link></li>
-              <li onClick={handleToggleMenu}><Link to="/schedule">Schedule</Link></li>
+              <li onClick={handleToggleMenu}><a href="#profile">
+                <img className={navbarStyles.icon} src={icon} alt="Page Icon" />  
+              </a></li>
+              <li onClick={handleToggleMenu}><a href="#experience">Experience</a></li>
+              <li onClick={handleToggleMenu}><a href="#projects">Projects</a></li>
           </ul>
       </div>
     </nav>
