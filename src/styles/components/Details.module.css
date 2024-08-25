@@ -68,3 +68,9 @@
     }
 }
 
+@media (min-width: 768px) {
+    .details-container {
+        width: 30%;
+        padding: 1rem;
+    }
+}

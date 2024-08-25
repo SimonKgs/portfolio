@@ -23,15 +23,18 @@ html, body {
 body {
   font-family: var(--font-family);
   background-color: var(--background-color);
+  background: linear-gradient(to top, #000033, #00002A, #000022, #000019, #000011, #000008, #000000);   
   color: var(--text-color);
   line-height: 1.5;
 }
+
+
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.5rem 0;
+  padding: 3.5rem 1rem;
 }
 
 /* components/Layout.module.css */
@@ -53,4 +56,30 @@ section {
     align-items: center;
     padding: 3.5rem;
   }
+}
+
+/* SCROLL BAR */
+/* WebKit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
 }

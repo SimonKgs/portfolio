@@ -5,9 +5,9 @@ import { Education, FullExperience, Skills } from './'
 export const Details: React.FC = () => {
   return (
     <>
-        <div className={detailsStyles['details-container']}>
+        <section id='skills' className={detailsStyles['details-container']}>
             <Skills />    
-        </div>
+        </section>
         <div className={detailsStyles['details-container']}>
             <Education />           
         </div>
