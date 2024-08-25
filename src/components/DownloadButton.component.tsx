@@ -5,7 +5,7 @@ import { profileStyles } from '../styles'
 
 export const DownloadButton: React.FC = () => {
   return (
-    <a className={profileStyles['download-button']} href={cv} download="cv.pdf">
+    <a className={profileStyles['download-button']} href={cv} download="simon-quiros-cv.pdf">
         Download my CV
     </a>
   )

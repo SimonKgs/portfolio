@@ -25,3 +25,8 @@ export interface ProjectInterface {
     projectUrl?: string;
     projectImg: string;
 }
+
+export interface SkillInterface {
+    tech: TechnologyInterface;
+    ability: number;
+}

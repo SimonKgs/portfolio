@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { navbarStyles } from '../styles'; 
 import { icon } from '../assets';
 
-
 export const Navbar: React.FC = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -1,0 +1,23 @@
+import React from 'react'
+import { detailsStyles } from '../styles'
+import { skillsData } from '../data/cv.data'
+import { SkillInterface } from '../interfaces/cv.interfaces';
+import { Skill } from './Skill.component';
+
+export const Skills: React.FC = () => {
+
+    const skills: SkillInterface[] = [...skillsData];
+
+    const skillsSorted = skills.sort((a, b) => b.ability - a.ability)
+
+    return (
+        <>
+            <p className={detailsStyles.title}>Skills</p>
+            <div className="skill-list-container">
+                { skillsSorted.map(({ tech, ability}) => (
+                    <Skill tech={tech} ability={ability}/>
+                ))}
+            </div>
+        </>
+    )
+}

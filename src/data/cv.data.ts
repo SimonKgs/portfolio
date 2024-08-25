@@ -1,4 +1,10 @@
-import { EducationInterface, ProjectInterface, TechnologyInterface, WorkExperience } from "../interfaces/cv.interfaces";
+import { 
+  EducationInterface,
+  ProjectInterface,
+  SkillInterface,
+  TechnologyInterface,
+  WorkExperience 
+} from "../interfaces/cv.interfaces";
 
 import {
     node,
@@ -16,7 +22,12 @@ import {
     weekSchedule,
     spotifyClone,
     ordunte,
-    planner,     
+    planner,
+    angular,
+    vue,
+    git,
+    nextjsWhite,
+    mysqlWhite,     
 } from '../assets/';
 
 export const workExperiences: WorkExperience[] = [
@@ -152,7 +163,7 @@ export const technologies: TechnologyInterface [] = [
 ]
 
 
-export const education: EducationInterface [] = [
+export const educationData: EducationInterface [] = [
   {
     degree: 'Higher Technician in Web Application Development',
     institution: ' C.I.F.P Avilés',
@@ -174,7 +185,7 @@ export const education: EducationInterface [] = [
   },
 ]
 
-export const projects: ProjectInterface [] = [
+export const projectsData: ProjectInterface [] = [
   {
     name: 'Millenium Luxury Properties',
     description: 'During my previous job, I was instrumental in developing this real estate application using JavaScript, PHP, MySQL, CSS, and HTML. It serves as a robust platform for property listings and real estate services, reflecting my skills in full-stack development',
@@ -188,7 +199,7 @@ export const projects: ProjectInterface [] = [
   },
   {
     name: 'Your Rounded Week',
-    description: 'I created this application from scratch to help me organize my weekly schedule more effectively and to showcase my skills in React and TypeScript. I used it as an opportunity to practice React after not using it for a long time and to explore new libraries like Three js and ExcelJS.',
+    description: 'I created this application from scratch to help me organize my weekly schedule more effectively and to showcase my skills in React and TypeScript. I used it as an opportunity to practice React after not using it for a long time and to explore new libraries like ThreeJS and ExcelJS.',
     projectImg: weekSchedule,
     projectUrl: 'https://your-rounded-week.netlify.app/',
   },
@@ -203,5 +214,93 @@ export const projects: ProjectInterface [] = [
     description: 'In my previous job, I significantly contributed to Ordunte, an ambitious project that, although unfinished by me, showcases my ability to collaborate effectively and manage complex project requirements.',
     projectImg: ordunte,
     projectUrl: 'https://www.ordunte.com/',
+  },
+]
+
+
+export const skillsData: SkillInterface[] = [
+  {
+    ability: 90,
+    tech: {
+      name: 'JavaScript',
+      imgUrl: js,
+    }
+  },
+  {
+    ability: 85,
+    tech: {
+      name: 'TypeScript',
+      imgUrl: ts,
+    }
+  },
+  {
+    ability: 80,
+    tech: {
+      name: 'Node',
+      imgUrl: node,
+    }
+  },
+  {
+    ability: 75,
+    tech: {
+      name: 'Python',
+      imgUrl: python,
+    }
+  },
+  {
+    ability: 85,
+    tech: {
+      name: 'HTML',
+      imgUrl: html,
+    }
+  },
+  {
+    ability: 85,
+    tech: {
+      name: 'CSS',
+      imgUrl: css,
+    }
+  },
+  {
+    ability: 75,
+    tech: {
+      name: 'MySQL',
+      imgUrl: mysqlWhite,
+    }
+  },
+  {
+    ability: 65,
+    tech: {
+      name: 'Angular',
+      imgUrl: angular,
+    }
+  },
+  {
+    ability: 65,
+    tech: {
+      name: 'Vue',
+      imgUrl: vue,
+    }
+  },
+  {
+    ability: 70,
+    tech: {
+      name: 'Git',
+      imgUrl: git,
+    }
+  },
+  {
+    ability: 70,
+    tech: {
+      name: 'NextJS',
+      imgUrl: nextjsWhite,
+    }
+  },
+  {
+    ability: 80,
+    tech: {
+      name: 'React',
+      imgUrl: reactIcon,
+    }
   },
 ]

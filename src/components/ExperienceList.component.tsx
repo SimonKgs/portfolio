@@ -1,6 +1,6 @@
 import React from 'react';
 import { experienceStyles } from '../styles';
-import { Experience } from './Experience.component';
+import { Experience } from './';
 import { workExperiences } from '../data/cv.data';
 
 export const ExperiencesList: React.FC = () => {

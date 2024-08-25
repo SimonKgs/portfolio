@@ -1,8 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { Footer, Navbar } from '.';
-import { Stars } from './Stars.component';
-
+import { Footer, Navbar, Stars } from './';
 
 
 export const Layout: React.FC = () => {

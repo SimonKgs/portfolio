@@ -12,8 +12,10 @@ export const Project: React.FC<{ project: ProjectInterface }> = ({ project }) =>
             </div>
             <div className={projectStyles['project-info-container']}>
                 <p className={projectStyles['title']}>{ name }</p>
+                {/* Getting the p from the description and avoiding the last one that is empty */}
                 {description.split(".").map( (pargraph, index) => (
-                    <p key={`${index}_paragraph`}>{pargraph}</p>
+                    ( pargraph !== '') &&
+                        <p key={`${index}_paragraph`}>{pargraph}.</p>
                 ))}
                 {(projectUrl) &&
                     <a href={projectUrl} target='_blank'>Visit {name}</a>

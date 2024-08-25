@@ -17,7 +17,7 @@
     flex-direction: column;
 }
 
-.home-profile, .home-info {
+.home-profile, .home-info, .home-details {
     display: flex;
     border-radius: 1rem;
     border: 1px solid black;
@@ -39,10 +39,15 @@
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
-    contain: layout style; /* Restricts the scope of layout and style recalculations */
+    contain: layout style;
     gap: 2rem;
 }
 
+
+.home-details {
+    width: 100%;
+    justify-content: space-between;
+}
 
 @media (min-width: 768px) {
     .home-container {

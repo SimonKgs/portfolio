@@ -1,7 +1,6 @@
 import React from 'react'
 
- 
-import { profileStyles } from '../styles'
+import { technologies } from '../data/cv.data'
 
 import {
     profilePicture,
@@ -9,7 +8,8 @@ import {
     github,
     linkedin,
 } from '../assets'
-import { technologies } from '../data/cv.data'
+
+import { profileStyles } from '../styles'
 import { DownloadButton } from './';
 
 

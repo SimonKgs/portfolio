@@ -76,17 +76,17 @@
     }
 
     .menuToggle {
-        display: block; /* Show toggle button on mobile */
+        display: block;
     }
 
     .menu {
-        display: none; /* Hide menu by default */
+        display: none;
         flex-direction: column;
         width: 100%;
     }
 
     .menu.open {
-        display: flex; /* Show menu when open */
+        display: flex;
     }
 
     .menu li {
