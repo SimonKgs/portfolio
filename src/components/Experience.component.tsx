@@ -17,11 +17,11 @@ export const Experience: React.FC<{ experience: WorkExperienceInterface }> = ({ 
           { monthsConverter(months) }
         </p>
         <div className={experienceStyles['work-technologies']}>
-          { technologies.slice(0, 4).map( tech => (
+          { technologies!.slice(0, 4).map( tech => (
             <img key={`${tech.name}_work_tech`} src={tech.imgUrl} alt={tech.name}/>
           ))}
         </div>
       </div>
     </>
-  );
+  )
 };

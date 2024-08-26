@@ -115,6 +115,48 @@ export const workExperiences: WorkExperienceInterface[] = [
       description:
         'Enhanced technical skills in IT support and troubleshooting, delivering solutions and maintenance for diverse IT systems.',
     },
+    {
+      position: 'IT Technician',
+      company: 'Seresco',
+      year: 2020,
+      technologies: [
+        {
+          name: 'Windows',
+          imgUrl: windows, 
+        },
+        {
+            name: 'Linux',
+            imgUrl: linux, 
+        },
+      ],
+      months: 6,
+      description:
+        'Enhanced technical skills in IT support and troubleshooting, delivering solutions and maintenance for diverse IT systems.',
+    },
+    {
+      position: 'Waiter',
+      company: 'El Chiringuito de Clara',
+      year: 2012,
+      months: 48,
+      description:
+        'I worked here for four seasons as a waiter, where I developed strong interpersonal skills, effective communication, teamwork abilities, and time management.',
+    },
+    {
+      position: 'Kitchen Assistant',
+      company: 'El Tormentín',
+      year: 2017,
+      months: 24,
+      description:
+        'I worked in the kitchen here for two seasons, developing management skills, working effectively under pressure, and learning various recipes.',
+    },
+    {
+      position: 'Kitchen Assistant',
+      company: 'Chiringuito "El Ponderoso"',
+      year: 2007,
+      months: 30,
+      description:
+        'I worked in the kitchen here for two seasons, developing management skills, working effectively under pressure, and learning various recipes.',
+    },
   ];
 
 

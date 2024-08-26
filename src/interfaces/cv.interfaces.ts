@@ -4,7 +4,7 @@ export interface WorkExperienceInterface {
     months: number;
     year: number;
     description: string;
-    technologies: TechnologyInterface[];
+    technologies?: TechnologyInterface[];
 }
 
 export interface TechnologyInterface {
