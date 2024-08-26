@@ -11,12 +11,8 @@
   box-sizing: border-box;
 }
 
-html, body {
-  background-color: linear-gradient(to top, #000033, #00002A, #000022, #000019, #000011, #000008, #000000);
-}
 
 html, body {
-  height: 100vh;
   height: 100dvh;
   margin: 0;
   padding: 0rem; 
@@ -29,13 +25,13 @@ html, body {
 body {
   font-family: var(--font-family);
   background-color: var(--background-color);
-  background: linear-gradient(to top, #000033, #00002A, #000022, #000019, #000011, #000008, #000000);   
+  background: #000018;
+  /* background: linear-gradient(to top, #000033, #00002A, #000022, #000019, #000011, #000008, #000000);    */
   color: var(--text-color);
   line-height: 1.5;
   background-size: cover;
   background-attachment: fixed;
 }
-
 
 
 main {
