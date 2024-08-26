@@ -1,7 +1,7 @@
 import React from 'react';
 import { experienceStyles } from '../styles';
 import { WorkExperienceInterface } from '../interfaces/cv.interfaces';
-import { monthsConverter } from '../utils/MonthsConverter';
+import { monthsConverter } from '../utils/monthsConverter';
 
 
 
