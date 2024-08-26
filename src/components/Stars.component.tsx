@@ -19,7 +19,7 @@ export const Stars: React.FC  = () => {
 
       // Adjusting the canvas to the width of the window 
       const resizeCanvas = () => {
-            canvas.width = window.innerWidth - 20;
+            canvas.width = window.innerWidth - 12;
             canvas.height = window.innerHeight - 20;
             // Optionally, you might want to reset stars here if needed
       };

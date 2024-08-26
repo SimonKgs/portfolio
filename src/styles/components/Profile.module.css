@@ -94,7 +94,7 @@
 .download-buttons-container{
     display: flex;
     justify-content: space-around;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .download-button {
@@ -127,5 +127,10 @@
     .profile-whoami {
         text-align: start;
     }
+
+    .download-buttons-container{
+        gap: 2rem;
+    }
+    
 
 }

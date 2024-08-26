@@ -30,3 +30,4 @@ export { default as nextjsWhite } from './icons/nextjsWhite.svg'
 
 //CV
 export { default as cv } from './simon-cv.pdf'
+export { default as cvSpanish } from './spanish-cv.pdf'

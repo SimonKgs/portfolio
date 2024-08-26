@@ -33,7 +33,7 @@ export const Profile: React.FC = () => {
                 ))} 
             </div>
             <div className={profileStyles['profile-description']}>
-                <p>I'm a web developer focused on frontend development, particularly in JavaScript and TypeScript. I have strong knowledge of React, which is the framework I know best, but I've also used Angular, Next.js, and Vue in some projects, allowing me to adapt to different technologies as needed.</p>
+                <p>I am a web developer focused on frontend development, particularly in JavaScript and TypeScript. I have strong knowledge of React, which is the framework I know best, but I've also used Angular, Next.js, and Vue in some projects, allowing me to adapt to different technologies as needed.</p>
                 <br />
                 <p>While my primary expertise is in frontend development, I have a growing interest in backend development. I have good knowledge of Node.js and have recently dedicated significant time to learning Python, expanding my backend capabilities.</p>
             </div>
