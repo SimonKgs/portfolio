@@ -1,7 +1,7 @@
 import React from 'react'
 import { WorkExperienceInterface } from '../interfaces/cv.interfaces'
 import { jobStyles } from '../styles'
-import { monthsConverter } from '../utils/MonthsConverter'
+import { monthsConverter } from '../utils/monthsConverter';
 
 export const Job: React.FC<{job: WorkExperienceInterface}> = ({job}) => {
 
