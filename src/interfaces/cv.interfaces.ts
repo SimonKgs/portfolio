@@ -1,7 +1,8 @@
-export interface WorkExperience {
+export interface WorkExperienceInterface {
     position: string;
     company: string;
     months: number;
+    year: number;
     description: string;
     technologies: TechnologyInterface[];
 }
@@ -17,6 +18,7 @@ export interface EducationInterface {
     year: number;
     details: string;
     degreeImg?: string;
+    teacher?: string;
 }
 
 export interface ProjectInterface {

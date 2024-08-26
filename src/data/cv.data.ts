@@ -3,7 +3,7 @@ import {
   ProjectInterface,
   SkillInterface,
   TechnologyInterface,
-  WorkExperience 
+  WorkExperienceInterface 
 } from "../interfaces/cv.interfaces";
 
 import {
@@ -30,10 +30,11 @@ import {
     mysqlWhite,     
 } from '../assets/';
 
-export const workExperiences: WorkExperience[] = [
+export const workExperiences: WorkExperienceInterface[] = [
     {
       position: 'Full-Stack Developer',
       company: 'Semilla Proyectos Internet',
+      year: 2022,
       months: 12,
       technologies: [
         {
@@ -59,6 +60,7 @@ export const workExperiences: WorkExperience[] = [
     {
       position: 'Frontend Developer',
       company: 'I-logica',
+      year: 2021,
       months: 6,
       technologies: [
         {
@@ -79,6 +81,7 @@ export const workExperiences: WorkExperience[] = [
     },
     {
       position: 'Data Center Operator',
+      year: 2021,
       company: 'ASAC',
       months: 3,
       technologies: [
@@ -97,6 +100,7 @@ export const workExperiences: WorkExperience[] = [
     {
       position: 'IT Technician',
       company: 'Seresco',
+      year: 2020,
       technologies: [
         {
           name: 'Windows',
@@ -166,7 +170,7 @@ export const technologies: TechnologyInterface [] = [
 export const educationData: EducationInterface [] = [
   {
     degree: 'Higher Technician in Web Application Development',
-    institution: ' C.I.F.P Avilés',
+    institution: 'C.I.F.P Avilés',
     year: 2021,
     details: `During my studies as a Higher Technician in Web Application
     Development at C.I.F.P. Avilés, I acquired a solid foundation in
@@ -176,26 +180,47 @@ export const educationData: EducationInterface [] = [
   {
     degree: `Higher Technician in Operating Systems and
     Network Administration`,
-    institution: ' C.I.F.P Avilés',
+    institution: 'C.I.F.P Avilés',
     year: 2019,
-    details: `n the Higher Technician in Operating Systems and Network
+    details: `In the Higher Technician in Operating Systems and Network
     Administration program at C.I.F.P. Avilés, I received
     comprehensive training in managing and administering
     computer systems and networks`,
+  },
+  {
+    degree: `100 Days of Code: Python Pro Bootcamp`,
+    institution: 'Udemy',
+    year: 2024,
+    teacher: 'Dr. Angela Yu',
+    details: `Over these hundred days, I completed dozens of projects with Python to learn the basics, web development, REST APIs, data scraping, and a bit of data analysis. For these projects, I used technologies such as Flask, Pandas, Selenium, and more.`,
+  },
+  {
+    degree: `React: De cero a experto (Hooks y Mern)`,
+    institution: 'Udemy',
+    year: 2022,
+    teacher: 'Fernando Herrera',
+    details: `Here, I learned a lot about React, which also helped me learn MongoDB and practice more with Node.js. It was a very instructive course with an excellent teacher.`,
+  },
+  {
+    degree: `Node: De cero a experto`,
+    institution: 'Udemy',
+    year: 2021,
+    teacher: 'Fernando Herrera',
+    details: `My first course completed on Udemy, where I learned a lot about backend development with Node.js and Express. I built applications using REST APIs, OAuth for secure authentication, and WebSockets for real-time communication, among other technologies. It was an excellent course.`,
   },
 ]
 
 export const projectsData: ProjectInterface [] = [
   {
+    name: 'Spotify Clone',
+    description: 'For my Higher Technician certification, I developed a Spotify clone that was both challenging and rewarding. Starting with Nextjs, I integrated features like user authentication, playlist management, and song searching via the Deezer API. This project highlights my adaptability and growth in using TypeScript and modern web frameworks.',
+    projectImg: spotifyClone,
+  },
+  {
     name: 'Millenium Luxury Properties',
     description: 'During my previous job, I was instrumental in developing this real estate application using JavaScript, PHP, MySQL, CSS, and HTML. It serves as a robust platform for property listings and real estate services, reflecting my skills in full-stack development',
     projectImg: millenium,
     projectUrl: 'https://www.millenniumluxuryproperties.com/',
-  },
-  {
-    name: 'Spotify Clone',
-    description: 'For my Higher Technician certification, I developed a Spotify clone that was both challenging and rewarding. Starting with Nextjs, I integrated features like user authentication, playlist management, and song searching via the Deezer API. This project highlights my adaptability and growth in using TypeScript and modern web frameworks.',
-    projectImg: spotifyClone,
   },
   {
     name: 'Your Rounded Week',

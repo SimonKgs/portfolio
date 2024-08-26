@@ -2,7 +2,7 @@ import React from 'react'
 import { detailsStyles } from '../styles'
 import { skillsData } from '../data/cv.data'
 import { SkillInterface } from '../interfaces/cv.interfaces';
-import { Skill } from './Skill.component';
+import { Skill } from './';
 
 export const Skills: React.FC = () => {
 

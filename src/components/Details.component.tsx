@@ -1,6 +1,6 @@
 import React from 'react'
 import { detailsStyles } from '../styles'
-import { Education, FullExperience, Skills } from './'
+import { JobList, Skills, EducationList } from './'
 
 export const Details: React.FC = () => {
   return (
@@ -8,11 +8,11 @@ export const Details: React.FC = () => {
         <section id='skills' className={detailsStyles['details-container']}>
             <Skills />    
         </section>
-        <div className={detailsStyles['details-container']}>
-            <Education />           
+        <div id='education' className={detailsStyles['details-container']}>
+            <EducationList />           
         </div>
-        <div className={detailsStyles['details-container']}>
-            <FullExperience />           
+        <div id='full-experience' className={detailsStyles['details-container']}>
+            <JobList />           
         </div>
     </>
   )

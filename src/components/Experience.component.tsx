@@ -1,10 +1,11 @@
 import React from 'react';
 import { experienceStyles } from '../styles';
-import { WorkExperience } from '../interfaces/cv.interfaces';
+import { WorkExperienceInterface } from '../interfaces/cv.interfaces';
+import { monthsConverter } from '../utils/MonthsConverter';
 
 
 
-export const Experience: React.FC<{ experience: WorkExperience }> = ({ experience }) => {
+export const Experience: React.FC<{ experience: WorkExperienceInterface }> = ({ experience }) => {
   const { position, company, months, technologies } = experience;
 
   return (
@@ -13,9 +14,7 @@ export const Experience: React.FC<{ experience: WorkExperience }> = ({ experienc
         <p className={experienceStyles['work-position']}>{ position }</p>
         <p className={experienceStyles['work-company']}>{ company }</p>
         <p className={experienceStyles['work-time']}>
-          {months % 12 === 0
-            ? `${months / 12} ${months / 12 > 1 ? 'Years' : 'Year'}`
-            : `${months} ${months > 1 ? 'Months' : 'Month'}`}
+          { monthsConverter(months) }
         </p>
         <div className={experienceStyles['work-technologies']}>
           { technologies.slice(0, 4).map( tech => (

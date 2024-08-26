@@ -24,6 +24,8 @@ export const Navbar: React.FC = () => {
               <li onClick={handleToggleMenu}><a href="#experience">Experience</a></li>
               <li onClick={handleToggleMenu}><a href="#projects">Projects</a></li>
               <li onClick={handleToggleMenu}><a href="#skills">Skills</a></li>
+              <li onClick={handleToggleMenu}><a href="#education">Education</a></li>
+              <li onClick={handleToggleMenu}><a href="#full-experience">Full Experience</a></li>
           </ul>
       </div>
     </nav>

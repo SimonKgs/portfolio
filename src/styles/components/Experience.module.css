@@ -16,7 +16,10 @@
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
+    text-decoration: underline;
+
 }
+
 
 .work {
     list-style: none;
@@ -71,7 +74,7 @@
 }
 
 
-@media (min-width: 1250px) and (max-width: 1799px) {
+@media (min-width: 768px) and (max-width: 1799px) {
     .experiences {
         grid-template-columns: repeat(2, 1fr);
     }

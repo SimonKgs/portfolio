@@ -80,8 +80,25 @@
     width: 2rem;
 }
 
+.download-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.download-container p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.download-buttons-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
 .download-button {
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 0.5rem;
     border: none;
     box-shadow: 0 4px 8px rgba(26, 26, 26, 0.5);
@@ -93,7 +110,8 @@
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
-    text-decoration: none
+    text-decoration: none;
+    width: 100%;
 }
 
 .download-button:hover {
