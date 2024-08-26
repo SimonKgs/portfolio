@@ -65,7 +65,7 @@
 @media (max-width: 768px) {
 
     .nav {
-        width: calc(100vw - 4px);
+        width: 100vw
     }
 
     .nav, .navbar {
