@@ -12,11 +12,15 @@
 }
 
 html, body {
+  background-color: linear-gradient(to top, #000033, #00002A, #000022, #000019, #000011, #000008, #000000);
+}
+
+html, body {
   height: 100%;
-  margin: 0; /* Remove default margins */
-  padding: 0rem; /* Remove default padding */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  max-width: 100vw; /* Ensure the body is at most the viewport width */
+  margin: 0;
+  padding: 0rem; 
+  overflow-x: hidden; 
+  max-width: 100vw;
   box-sizing: border-box; 
 }
 
