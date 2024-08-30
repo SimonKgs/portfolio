@@ -10,14 +10,9 @@
 }
 
 .skill-tech p {
-    font-size: 1.1rem;
-    margin-left: 1rem;
     font-weight: 600;
 }
 
-.skill-tech img {
-    width: 2rem;
-}
 
 .progress-bar {
     margin: 1rem 0;

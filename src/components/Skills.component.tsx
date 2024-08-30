@@ -12,7 +12,7 @@ export const Skills: React.FC = () => {
 
     return (
         <>
-            <p className={detailsStyles.title}>Skills</p>
+            <p className="title m2 underline">Skills</p>
             <div className="skill-list-container">
                 { skillsSorted.map(({ tech, ability}) => (
                     <Skill key={`${tech.name}_skill`} tech={tech} ability={ability} />

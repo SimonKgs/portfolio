@@ -1,5 +1,4 @@
 import React from 'react'
-import { detailsStyles } from '../styles'
 import {Job} from '.';
 import { workExperiences } from '../data/cv.data';
 import { WorkExperienceInterface } from '../interfaces/cv.interfaces';
@@ -11,7 +10,7 @@ export const JobList: React.FC = () => {
     
     return (
         <>
-            <p className={detailsStyles.title}>Full Experience</p>
+            <p className='title m2 underline'>Full Experience</p>
             <div className="skill-list-container">
                 { workByYear.map((job) => (
                     <Job key={`${job.company}_${job.year}`} job={job} />

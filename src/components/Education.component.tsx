@@ -8,12 +8,12 @@ export const Education: React.FC<{education: EducationInterface}> = ({education}
   
   return (
     <div className={educationStyles['education-container']}>
-      <p className={ educationStyles['education-title'] }>{ degree }</p>
+      <p className='title2'>{ degree }</p>
       { education.teacher &&
-          <p className={ educationStyles.teacher }>{ education.teacher }</p>
+          <p className='title3'>{ education.teacher }</p>
       }
-      <p className={educationStyles.subinfo}>{ institution } - { year }</p>
-      <p>{ details}</p>
+      <p className='subtitle m2'>{ institution } - { year }</p>
+      <p className='text'>{ details}</p>
       {education.degreeImg && 
         <img src={education.degreeImg} alt={`${ degree } Title Image`} />
       }

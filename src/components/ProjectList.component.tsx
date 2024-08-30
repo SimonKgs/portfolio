@@ -8,7 +8,7 @@ import { Project } from './';
 export const ProjectList: React.FC = () => {
     return (
         <section id='projects'>
-          <p className={projectStyles['main-title']}>Featured Projects</p>
+          <p className='title underline m1'>Featured Projects</p>
           <div className={projectStyles['project-container']}>
             {projectsData.slice(0, 4).map((project, index) => (
               <Project key={index} project={project} />

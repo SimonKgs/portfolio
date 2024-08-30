@@ -9,12 +9,12 @@ export const Job: React.FC<{job: WorkExperienceInterface}> = ({job}) => {
 
   return (
     <div className={jobStyles['job-container']}>
-      <p className={jobStyles['job-title']}>{ company }</p>
-      <p className={jobStyles['job-title']}>{ position }</p>
-      <p className={jobStyles.timeWorking}>
+      <p className='title2'>{ company }</p>
+      <p className='title3'>{ position }</p>
+      <p className='subtitle m2'>
       { monthsConverter(months) }
       </p>
-      <p>{ description } </p>
+      <p className='text'>{ description } </p>
     </div>
   )
 }

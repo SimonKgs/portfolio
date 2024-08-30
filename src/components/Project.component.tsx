@@ -11,14 +11,14 @@ export const Project: React.FC<{ project: ProjectInterface }> = ({ project }) =>
                 <img src={ projectImg } alt={name} />
             </div>
             <div className={projectStyles['project-info-container']}>
-                <p className={projectStyles['title']}>{ name }</p>
+                <p className='title m1'>{ name }</p>
                 {/* Getting the p from the description and avoiding the last one that is empty */}
                 {description.split(".").map( (pargraph, index) => (
                     ( pargraph !== '') &&
-                        <p key={`${index}_paragraph`}>{pargraph}.</p>
+                        <p className='text' key={`${index}_paragraph`}>{pargraph}.</p>
                 ))}
                 {(projectUrl) &&
-                    <a href={projectUrl} target='_blank'>Visit {name}</a>
+                    <a className='link' href={projectUrl} target='_blank'>Visit {name}</a>
                 }
             </div>
         </div>

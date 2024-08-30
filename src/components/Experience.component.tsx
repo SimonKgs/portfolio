@@ -11,14 +11,14 @@ export const Experience: React.FC<{ experience: WorkExperienceInterface }> = ({ 
   return (
     <>
       <div className={experienceStyles['work']}>
-        <p className={experienceStyles['work-position']}>{ position }</p>
-        <p className={experienceStyles['work-company']}>{ company }</p>
-        <p className={experienceStyles['work-time']}>
+        <p className='title2'>{ position }</p>
+        <p className='title3'>{ company }</p>
+        <p className='subtitle m1'>
           { monthsConverter(months) }
         </p>
         <div className={experienceStyles['work-technologies']}>
           { technologies!.slice(0, 4).map( tech => (
-            <img key={`${tech.name}_work_tech`} src={tech.imgUrl} alt={tech.name}/>
+            <img  className='icon' key={`${tech.name}_work_tech`} src={tech.imgUrl} alt={tech.name}/>
           ))}
         </div>
       </div>

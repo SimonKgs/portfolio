@@ -31,8 +31,6 @@
 }
 
 .project a {
-    font-size: 1.1rem;
-    font-weight: 600;
     text-decoration: none;
     color: #3E75C3;
     transition: color 1s ease;

@@ -7,7 +7,7 @@ export const ExperiencesList: React.FC = () => {
   
   return (
     <section id='experience' className={experienceStyles['experience-container']}>
-      <p className={experienceStyles['title']}>Related Experience</p>
+      <p className='title underline m1'>Related Experience</p>
       <div className={experienceStyles['experiences']}>
         {workExperiences.slice(0, 4).map((work, index) => (
           <Experience key={index} experience={work} />

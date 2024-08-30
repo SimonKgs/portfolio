@@ -43,9 +43,6 @@
     justify-content: center;
 }
 
-.profile-technology img {
-    width: 2rem;
-}
 
 .profile-description {
     margin: 1rem 0;
@@ -74,10 +71,6 @@
 
 .profile-contact-me a:hover {
     color: #bbb7ff;
-}
-
-.profile-contact-me a img {
-    width: 2rem;
 }
 
 .download-container {
@@ -118,7 +111,20 @@
     background-color: #0548a7;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1250px) {
+
+    .profile-whoami {
+        text-align: center;
+    }
+    
+    
+    .download-buttons-container{
+        gap: 2rem;
+    }
+
+}
+
+@media (min-width: 1250px) {
 
     .profile-contact-me a {
         flex-direction: row;
@@ -131,6 +137,5 @@
     .download-buttons-container{
         gap: 2rem;
     }
-    
 
 }

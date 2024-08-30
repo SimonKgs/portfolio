@@ -301,7 +301,7 @@ export const skillsData: SkillInterface[] = [
     }
   },
   {
-    ability: 80,
+    ability: 75,
     tech: {
       name: 'Node',
       imgUrl: node,
@@ -343,7 +343,7 @@ export const skillsData: SkillInterface[] = [
     }
   },
   {
-    ability: 65,
+    ability: 60,
     tech: {
       name: 'Vue',
       imgUrl: vue,
