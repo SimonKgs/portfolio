@@ -82,6 +82,7 @@
     margin-bottom: 2rem;
     font-size: 1.2rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .download-buttons-container{
@@ -136,6 +137,10 @@
 
     .download-buttons-container{
         gap: 2rem;
+    }
+
+    .download-container p {
+        text-align: start;
     }
 
 }
