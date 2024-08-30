@@ -52,7 +52,7 @@
 .work-technologies {
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: start;
 }
 
 .work-technologies img {
@@ -77,5 +77,11 @@
 @media (min-width: 768px) and (max-width: 1799px) {
     .experiences {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1800px) {
+    .experience-container {
+        min-width: 25rem;
     }
 }
