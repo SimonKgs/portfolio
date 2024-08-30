@@ -1,5 +1,4 @@
 import React from 'react'
-import { detailsStyles } from '../styles'
 import { skillsData } from '../data/cv.data'
 import { SkillInterface } from '../interfaces/cv.interfaces';
 import { Skill } from './';
